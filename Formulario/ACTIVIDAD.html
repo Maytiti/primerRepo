@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Estilo.css">
+    <!--Esta es la manera externa de integrar css en tu html, usando una etiqueta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividadOctubre21</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="span">
+        <span>| Inicio</span>
+        <span><a href="#Cosas que me gustan">| mas info |</a></span> <!--Este identificador "nos baja" a la pagina-->
+        <span> x |</span>
+        <span>Música |</span>
+    </div>
+
+
+    <div class="titulo" style="letter-spacing:.4rem;  margin-bottom: .75rem;">
+        <h1> Hola yo soy Mayte </h1> <!--Las etiquetas h1 hasta la h6 nos ayudan a tener encabezados-->
+    </div>
+    <br>
+    <h3>¿Qué quieres saber?</h3>
+    <br>
+    <div id="infoMia"> <!--mi primera seccion de la info del cuerpo de mi pagina-->
+        <!--AQUI INICIA ACORDEON-->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="titulo1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h5 id="titulo1">Sobre mí</h5> <!--Para cambiarle el color solo a los titulos este id-->
+                    </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>No me gusta que me digan Tere o Teresa. Así que no lo hagan</p>
+                        <p> Nací un 29 de junio y me habían programado para un 3 de julio.
+                            Me gustaría tener un caballo y un perico de máscotas</p>
+                        <p> Se cortar con lasér (mdf, madera, triplay, acrilico) grabar sobre metal o cosas tipo acero,
+                            me gusta hacer manualidades, pintar, me gusta arreglarme y maquillarme aunque lo que hago
+                            creo que es muy básico (mi hermanita sabe mas de maquillaje que yo y ella es mas chica).</p>
+                        <p>Me gustaría en algún punto de mi vida vivir en Europa :) sobre todo en Suiza o Bélgica.</p>
+                    </div>
+                </div>
+                <!--AQUI INICIA OTRO ACORDEON-->
+                <div class="accordion-item"> <!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                    <h3 class="accordion-header" id="titulo1"><!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                            <h5 id="titulo1">Mascotas</h5> <!--Para cambiarle el color solo a los titulos este id-->
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Tengo Dos conejitas que amo con todo mi corazoón.</p>
+                            <a href="conejas.html" target="_blank">Conocelas</a>
+                        </div>
+                    </div>
+                    <!--AQUI INICIA OTRO ACORDEON-->
+                    <div class="accordion-item"> <!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                        <h3 class="accordion-header" id="titulo1"><!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapsThree">
+                                <!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                                <h5 id="titulo2">Persona favorita</h5>
+                                <!--Para cambiarle el color solo a los titulos este id-->
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Mi hermanita <!--Anclaje para mas info de ella--></p>
+                                <a href="Nani.html" target="_blank">Conoce datos de ella</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="Cosas que me gustan">
+                <ol><!--Para hacer mi lista ordenada-->
+                    <li>Peliculas</li>
+                    <li>Canciones</li>
+                    <li>Deportes</li>
+                    <li><a href="https://github.com/Maytiti" target="_blank">mi github</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--Listas -->
+    <hr> <!--Línea divisora-->
+    <h3> Canciones recomendadas</h3>
+    <p>marca en la casilla las que te gustan tambien a ti</p>
+    <form>
+        <td> <!--Table Date-->
+            <ol type="a">
+                <!--Order List: los elementos de esta lista son ol para lista ordenada || cuando se le agrega el type se le puede poner lo de a) b) de la lista -->
+                <label>
+                    <li>Juno</li>
+                </label> <input type="checkbox">
+                <li>Delicate</li> <input type="checkbox">
+                <li>Iris</li> <input type="checkbox">
+                <li>Yellow</li> <input type="checkbox">
+                <li>Birds of a feather</li> <input type="checkbox">
+            </ol>
+        </td>
+    </form>
+
+    <p>"Dejame tus recomendaciones música!"</p>
+    <input type="text"> <!--Boton para agregar info-->
+    <input type="submit"> <!--Agrega botón que dice enviar-->
+
+    <br> <!--Salto de línea para dar espacio  (br es una etiqueta que no cierra)-->
+    <!--unorder List: los elementos de esta lista son ul para lista desordenada -->
+
+    <hr> <!--Es para poner una línea divisora-->
+
+    <h3>Mis top 5 de películas </h3>
+    <p> marca en la casilla las que te gustan tambien a ti :)
+    <ul type="circle">
+        <li>10 things i hate about you</li> <input type="checkbox">
+        <li>How to lose a guy in 10 days</li> <input type="checkbox">
+        <li>Ther princess diaries</li> <input type="checkbox">
+        <li>How to train your dragon </li> <input type="checkbox">
+        <li>Frozen</li> <input type="checkbox">
+
+    </ul>
+
+    <br>
+    <hr>
+    <!--AQUI INICIA OTRO ACORDEON-->
+    <div class="formulario">
+        <form class="registro">
+            <div class="accordion-item"> <!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                <h3 class="accordion-header" id="titulo1"><!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <!--PARTE DE BOOTSTRAP PARA ACORDEON-->
+                        <strong> Si quieres dejame tu info!</strong>
+                    </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <!--<div class="formulario">
+                    <form class="registro">-->
+                        <!-- FORM Es para decir que estoy trabajando con formulario|| INPUT es etiqueta para pedir info a nuestro usuario|| TYPE nos dice que tipo de imput (dato) voy a trabajar -->
+                        <!--<div class="datoEntrada"-->
+                        <label>Nombre</label>
+
+                        <!--Label es para darle nombre a cada seccion | es la definicion de los inputs-->
+                        <!--VERSION BASICA DE FORMULARIOS <input type="text" placeholder="Nombre"> -->
+                        <input id="nombre" class="datos" type="text">
+
+                        <br>
+                        <!--FORMA BASICA DE FORMULARIO <div class="datoEntrada" id="email">
+                            <input type="text" placeholder="Correo">
+                        </div> -->
+                        <label for="correo">Ingresa tu email</label>
+                        <input class="datos" type="email" id="correo">
+                        <br>
+                        <!-- <br> Salto de línea-->
+                        <!--PREGUNTAAAAAAAAAAAARRRRRRRRRR   <label for="correo">Ingresa tu email</label>  -->
+                        <!-- el for nos ayuda a  que este label esta linkeado con un email que ya se tenga guardado en el ordenador-->
+                        <!--OTRA FORMA MAS SENCILLA Y SIN JS  <input type="email" id="correo"> -->
+
+                        <!--OTRA FORMA MAS SENCILLA Y SIN JS DE CONTRASEÑA <div class="datoEntrada" id="password">
+                    <input type="text" placeholder="Contraseña">
+                </div>
+                  <label>Contraseña </label>
+                            <input type="password"> -->
+                        <label>Contraseña</label>
+                        <input id="password" class="datos" type="password">
+                        <br>
+                        <!--Omitir esto por ahorita <label>Fecha de nacimiento</label>
+                            <input type="date">
+                            <br>
+                            <label>Telefono</label>
+                            <input type="tel">
+                            <br> -->
+                        <label>terminos y condiciones</label>
+                        <input id="terminos" type="checkbox">
+                        <br>
+                        <label>quieres recibir update</label>
+                        <input type="radio">
+                        <!--<div class="boton">-->
+                        <!-- <button id="registrarse" type="button">Registro</button>
+                            <button id="sesion" type="button" class="deshabilitar">Login</button>-->
+                        <input id="registrarse" class="boton" type="button" value="Registrar">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <a href="https://getbootstrap.com/docs/5.3/components/accordion/#example" target="_blank">Acordeon
+        BOOTSTRAP</a>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=-Qz6Ev-vB5c" target="_blank">Video ejemplo de uso</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
