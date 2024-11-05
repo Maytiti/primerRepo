@@ -1,0 +1,17 @@
+body{
+    /*Aqui estoy hablando del elemento h1*/
+    -webkit-font-smoothing: antialiased;
+    div{
+        span{
+            color: #EDB6B3
+        }
+        h1{ /*aqui va mi regla css*/
+            color:#7f2549;
+        }
+    }
+}
+.infoMia{
+    #titulo2{
+color: #c0a1ae;
+    }
+}
