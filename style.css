@@ -1,0 +1,25 @@
+body{
+    h1{
+        -webkit-font-smoothing: simplifica;
+        text-align: center;
+        background-color: rgba(165, 42, 42, 0.329);
+        color:#7f2549;
+        -webkit-font-smoothing: simplifica;
+           
+    }
+       
+       .descripcion{
+        text-align:center !important; /*para mantenerloa la derecha y !important para priorizar la regla*/
+        margin: 10px;
+       }
+        .container{
+        display: flex; /*Activa la division de los contenedores*/
+        align-items: center; /*para que todo quede centrado verticalmente*/
+        margin: 20px;
+        }
+        h3{
+            color: red;
+            text-align: center;
+        }
+        
+   }
