@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!--Esto es un comentario-->
+<html lang="en"> <!-- nos indica el lenguaje-->
+<head> <!--Nos muestra la info de la pag-->
+    <link rel="stylesheet" href="styles.css"> <!--Esta es la manera externa de integrar css en tu html, usando una etiqueta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina web</title>
+</head>
+<body> <!--style="background-color: mistyrose;"*/-->
+<center>
+    <div class="span">
+    <span>| Inicio |</span>  <!-- SPAN es Para "menu en barra" (forma horizontal)-->
+    <span> Sobre mí |</span>
+    <span>Más de mí |</span>
+    <span>Música |</span>
+    <!--Este Div me ayudara a poner mi letra rosa-->
+</div>
+    <div class="titulo" style="letter-spacing:.4rem;  margin-bottom: .75rem;">
+    <h1> Hola yo soy Mayte </h1> <!--Las etiquetas h1 hasta la h6 nos ayudan a tener encabezados-->
+</div>
+</center>
+    <p> Esta es la primer página web que hago (creóoooo que hice una en prepa, pero supongamos que esta es la primera).</p> <!-- La etiqueta p es para crear parrafos (Con alt z se acomoda y no se me despliega lo que quiero)-->
+    <div class="titulos">
+    <h2 id="titulo1">Curiosidades </h2>
+    <p> Nací un 29 de junio y me habían programado para un 3 de julio.
+        Tengo dos conejitas que amo con todo mi corazoón. 
+        Me gustaría tener un caballo y un perico de máscotas</p>
+    <h2 id="titulo1">More </h2>
+    <p> Se cortar con lasér (mdf, madera, triplay, acrilico) grabar sobre metal o cosas tipo acero, me gusta hacer manualidades, pintar, me gusta arreglarme y maquillarme aunque lo que hago creo que es muy básico (mi hermanita sabe mas de maquillaje que yo y ella es mas chica).</p>
+    <h3 id="titulo1">Info extra </h3>
+    <p>Me gustaría en algún punto de mi vida vivir en Europa :) sobre todo en Suiza o Bélgica.</p>   
+
+    <div class="myDiv"> <!-- DIV Es para hacer una division "contenedor/ cajita"-->
+        <h2 id="amorHermana">amo a mi hermanita</h2>
+        <p>aunque a veces la quiero super matar</p>
+        </div>
+      </div>
+
+
+<!--Listas -->
+<hr> <!--Línea divisora-->
+<h3> Canciones recomendadas</h3>
+<p>marca en la casilla las que te gustan tambien a ti</p>
+<form>
+<td> <!--Table Date-->
+<ol type="a">
+    <!--Order List: los elementos de esta lista son ol para lista ordenada || cuando se le agrega el type se le puede poner lo de a) b) de la lista -->
+    <label> <li>Juno</li></label> <input type="checkbox">
+    <li>Delicate</li>   <input type="checkbox">
+    <li>Iris</li>   <input type="checkbox">
+    <li>Yellow</li>   <input type="checkbox">
+    <li>Birds of a feather</li>   <input type="checkbox">
+</ol>
+</td>
+</form>
+
+<p>"Dejame tus recomendaciones música!"</p>
+<input type="text"> <!--Boton para agregar info-->     
+<input type="submit"> <!--Agrega botón que dice enviar-->
+
+<br> <!--Salto de línea para dar espacio  (br es una etiqueta que no cierra)-->
+<!--unorder List: los elementos de esta lista son ul para lista desordenada -->
+
+<hr> <!--Es para poner una línea divisora-->
+
+<h3>Mis top 5 de películas </h3>
+<p> marca en la casilla las que te gustan tambien a ti :)
+<ul type="circle"> 
+    <li>10 things i hate about you</li>   <input type="checkbox">
+    <li>How to lose a guy in 10 days</li>   <input type="checkbox">
+    <li>Ther princess diaries</li>   <input type="checkbox">
+    <li>How to train your dragon </li>   <input type="checkbox">
+    <li>Frozen</li>   <input type="checkbox">
+
+</ul>
+<p>"Dejame tus recomendaciones de películas!"</p>
+<input type="text"> <!--Boton para agregar info-->     
+<input type="submit"> <!--Agrega botón que dice enviar-->
+<br>
+<br>
+<img src="./belg.jpg" 
+width="100" height="100" ><!-- Etiqueta para agregar imagenes es IMG SRC= "NOMBRE DE LA IMAGEN QUE ESTE EN LA CARPETA GUARDADA" ( Y WIDTH es para ajustar ancho y height de alto) -->
+<br>
+<p> Espero que disfrutes lo siguiente: </p>
+<a href="https://www.youtube.com/watch?v=Xvz0E5OEFV0">Canción que me gusta mucho </a> <!--Etiqueta que nos permite agregar enlaces dentro de mi página-->
+
+<br>    
+<a href="https://www.instagram.com/?hl=es" target="_blank">Entra a tu insta</a> <!--Con el atributo target nos abre otra ventana para ver instagram a diferencia de con el video-->
+<br>
+<hr> <!--Es para poner una línea divisora-->
+<p> Si quieres dejame tu info!</p>
+<form> <!-- FORM Es para decir que estoy trabajando con formulario|| INPUT es etiqueta para pedir info a nuestro usuario|| TYPE nos dice que tipo de imput (dato) voy a trabajar -->
+    <label>Nombre completo </label> <!--Label es para darle nombre a cada seccion | es la definicion de los inputs-->
+    <input type="text"> <!--Boton para agregar info-->
+    <br> <!--Salto de línea-->
+    <label for="correo">Ingresa tu email</label> <!-- el for nos ayuda a  que este label esta linkeado con un email que ya se tenga guardado en el ordenador-->
+    <input type="email" id="correo">
+    <br>
+    <label>Contraseña </label> 
+    <input type="password">
+    <br>
+    <label>Fecha de nacimiento</label>
+    <input type="date">
+    <br>
+    <label>Telefono</label>
+    <input type="tel">
+    <br>
+    <label>terminos y condiciones</label>
+    <input type="checkbox">
+    <br>
+    <label>quieres recibir update</label>
+    <input type="radio">
+
+
+</body>
+</html>

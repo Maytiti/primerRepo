@@ -1,0 +1,26 @@
+/*Cuando mi regla de estilo inicia solamente con el nombre de la etiqueta*/
+body{
+    /*Aqui estoy hablando del elemento h1*/
+    -webkit-font-smoothing: antialiased;
+    div{
+        span{
+            color: #EDB6B3
+        }
+        h1{ /*aqui va mi regla css*/
+            color:#7f2549;
+        }
+    }
+}
+
+.titulos{
+    #titulo1{
+        color:#7f2549
+    }
+   
+}
+
+.myDiv{
+    #amorHermana{
+color: #c0a1ae;
+    }
+}
